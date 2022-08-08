@@ -1,0 +1,22 @@
+# Verilog code for AND gate:
+module AND(output Y ,input A, B);
+and(Y, A, B );
+endmodule
+
+#Verilog code for OR gate:
+module OR(output Y, input A, B);
+or(Y, A, B);
+endmodule
+
+#Verilog code for NOR gate:
+module NOR(output Y, input A, B);
+nor(Y, A,B);
+endmodule
+
+#Verilog code for NAND gate:
+module NAND(output Y , input A, B);
+wire Yd;
+and (Yd ,A ,B);
+not (Y, Yd);
+endmodule
+
